@@ -6,7 +6,7 @@
       </div>
       <nav class="nav-bar">
         <ul>
-          <li v-for="(item, index) in navItems" :key="index">
+          <li v-for="(item, index) in navItems" :class="{'active': item.active}" :key="index">
             <a :href="item.url">{{ item.text }}</a>
 
           </li>
@@ -29,7 +29,7 @@ export default {
         {
           text: 'comics',
           url: '#',
-          active: false
+          active: true
         },
         {
           text: 'movies',
@@ -93,7 +93,7 @@ export default {
       align-items: center;
 
       .logo-wrapper{
-        height: 80%;
+        height: 75%;
   
         .logo{
           height: 100%;
@@ -102,13 +102,24 @@ export default {
       }
   
       .nav-bar{
+        height: 100%;
   
         li{
-          padding: 0.5rem;
+          height: $header-height;
+          margin: 0 0.5rem;
           display: inline-block;
           text-transform: uppercase;
-          font-size: 0.75rem;
+          font-size: 0.8rem;
           font-weight: 500;
+          line-height: $header-height;
+
+          &.active{
+            border-bottom: 3px solid $brand-color;
+
+            a{
+              color: $brand-color;
+            }
+          }
         }
       }
 
