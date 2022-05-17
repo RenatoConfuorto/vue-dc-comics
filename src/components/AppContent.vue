@@ -11,13 +11,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$container-height: 6rem;
+  @import "../style/variables.scss";
+  @import "../style/common.scss";
 
 .container{
-  height: $container-height;
+  height: $app-content-height;
   color: white;
   font-size: 1.3rem;
-  line-height: $container-height;
+  line-height: $app-content-height;
 }
 
 </style>

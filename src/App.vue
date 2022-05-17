@@ -8,6 +8,7 @@
     <!-- main -->
     <main>
       <AppContent/>
+      <AppIcons/>
     </main>
     <!-- footer -->
   </div>
@@ -16,12 +17,17 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppContent from "./components/AppContent.vue";
+import AppIcons from "./components/AppIcons.vue";
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     AppContent,
+    AppIcons,
+  },
+  created(){
+    document.title = 'Dc - Comics'
   }
 }
 </script>
