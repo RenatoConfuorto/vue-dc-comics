@@ -11,6 +11,10 @@
       <AppIcons/>
     </main>
     <!-- footer -->
+
+    <footer>
+      <AppFooter/>
+    </footer>
   </div>
 </template>
 
@@ -18,6 +22,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppContent from "./components/AppContent.vue";
 import AppIcons from "./components/AppIcons.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   name: 'App',
@@ -25,6 +30,7 @@ export default {
     AppHeader,
     AppContent,
     AppIcons,
+    AppFooter,
   },
   created(){
     document.title = 'Dc - Comics'
@@ -35,4 +41,6 @@ export default {
 <style lang="scss">
   @import "./style/variables.scss";
   @import "./style/common.scss";
+
+  
 </style>
