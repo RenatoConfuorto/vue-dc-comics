@@ -8,6 +8,7 @@
     <!-- main -->
     <main>
       <AppJumbotron/>
+      <AppComicsList/>
     </main>
     <!-- footer -->
 
@@ -25,6 +26,7 @@ import AppIcons from "./components/AppIcons.vue";
 import AppFooter from "./components/AppFooter.vue";
 import AppFooterAction from "./components/AppFooterAction.vue";
 import AppJumbotron from "./components/AppJumbotron.vue";
+import AppComicsList from "./components/AppComicsList.vue";
 
 export default {
   name: 'App',
@@ -34,6 +36,7 @@ export default {
     AppFooter,
     AppFooterAction,
     AppJumbotron,
+    AppComicsList,
   },
   created(){
     document.title = 'Dc - Comics'
