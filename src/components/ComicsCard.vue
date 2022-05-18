@@ -20,6 +20,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+@import "../style/common.scss";
+
 img{
   width: 100%;
   height: auto;
