@@ -6,8 +6,8 @@
       </div>
       <nav class="nav-bar">
         <ul>
-          <li v-for="(item, index) in navItems" :class="{'active': item.active}" :key="index">
-            <a :href="item.url">{{ item.text }}</a>
+          <li v-for="(item, index) in navItems" :class="{'active': activeItem == index}" :key="index">
+            <a :href="item.url" @click="changeActive(index)">{{ item.text }}</a>
 
           </li>
         </ul>
@@ -20,58 +20,54 @@
 export default {
   data() {
     return{
+      activeItem: 1,
       navItems:[
         {
           text: 'characters',
           url: '#',
-          active: false
         },
         {
           text: 'comics',
           url: '#',
-          active: true
         },
         {
           text: 'movies',
           url: '#',
-          active: false
         },
         {
           text: 'tv',
           url: '#',
-          active: false
         },
         {
           text: 'games',
           url: '#',
-          active: false
         },
         {
           text: 'collectibles',
           url: '#',
-          active: false
         },
         {
           text: 'videos',
           url: '#',
-          active: false
         },
         {
           text: 'fans',
           url: '#',
-          active: false
         },
         {
           text: 'news',
           url: '#',
-          active: false
         },
         {
           text: 'shop',
           url: '#',
-          active: false
         },
       ]
+    }
+  },
+  methods: {
+    changeActive(index){
+      this.activeItem = index;
     }
   }
 }
