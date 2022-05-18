@@ -7,12 +7,12 @@
 
     <!-- main -->
     <main>
-      <AppContent/>
-      <AppIcons/>
+      <AppJumbotron/>
     </main>
     <!-- footer -->
 
     <footer>
+      <AppIcons/>
       <AppFooter/>
       <AppFooterAction/>
     </footer>
@@ -21,19 +21,19 @@
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import AppContent from "./components/AppContent.vue";
 import AppIcons from "./components/AppIcons.vue";
 import AppFooter from "./components/AppFooter.vue";
 import AppFooterAction from "./components/AppFooterAction.vue";
+import AppJumbotron from "./components/AppJumbotron.vue";
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    AppContent,
     AppIcons,
     AppFooter,
     AppFooterAction,
+    AppJumbotron,
   },
   created(){
     document.title = 'Dc - Comics'
