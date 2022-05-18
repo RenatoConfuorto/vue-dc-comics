@@ -14,6 +14,7 @@
 
     <footer>
       <AppFooter/>
+      <AppFooterAction/>
     </footer>
   </div>
 </template>
@@ -23,6 +24,7 @@ import AppHeader from "./components/AppHeader.vue";
 import AppContent from "./components/AppContent.vue";
 import AppIcons from "./components/AppIcons.vue";
 import AppFooter from "./components/AppFooter.vue";
+import AppFooterAction from "./components/AppFooterAction.vue";
 
 export default {
   name: 'App',
@@ -31,6 +33,7 @@ export default {
     AppContent,
     AppIcons,
     AppFooter,
+    AppFooterAction,
   },
   created(){
     document.title = 'Dc - Comics'
