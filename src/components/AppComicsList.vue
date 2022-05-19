@@ -16,6 +16,7 @@
 import ComicsCard from "./ComicsCard.vue";
 
 export default {
+  name: "AppComicsList",
   data() {
     return{
       //array dei fumetti

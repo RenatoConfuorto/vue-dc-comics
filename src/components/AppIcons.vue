@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: "AppIcons",
   data() {
     return{
       icons: [
