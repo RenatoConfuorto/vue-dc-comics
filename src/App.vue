@@ -7,7 +7,7 @@
 
     <!-- main -->
     <main>
-      <AppJumbotron/>
+      <AppJumbotron :img="jumbo1"/>
       <AppComicsList/>
     </main>
     <!-- footer -->
@@ -37,6 +37,11 @@ export default {
     AppFooterAction,
     AppJumbotron,
     AppComicsList,
+  },
+  data(){
+    return{
+      jumbo1: 'jumbotron.jpg'
+    }
   },
   created(){
     document.title = 'Dc - Comics'

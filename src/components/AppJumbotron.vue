@@ -1,22 +1,32 @@
 <template>
   <div class="jumbotron">
-
+    <img :src="require(`../assets/img/${img}`)" alt="">
   </div>
 </template>
 
 <script>
 export default {
   name: "AppJumbotron",
+  props: {
+    img: String,
+  },
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 .jumbotron{
-  background-image: url(../assets/img/jumbotron.jpg);
   height: 15rem;
-  background-position: center top;
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  /* background-image: url(../assets/img/jumbotron.jpg); */
+  /* background-position: center top;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+
+  img {
+    width: 100%;
+  }
 }
 </style>
